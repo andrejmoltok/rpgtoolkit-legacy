@@ -465,7 +465,7 @@ char *yytext;
 #line 8 "lex.txt"
 unsigned int g_lines = 0;
 
-#define _END_FILE_LINE ++g_lines; CProgram::m_pLines->push_back(CProgram::m_pyyUnits->size() - 1)
+#define _END_FILE_LINE ++g_lines; CProgram::m_pLines->push_back(CProgram::m_pyyUnits->size() - 1)/**; std::cerr << "line " << g_lines << "\n"**/
 #line 470 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
